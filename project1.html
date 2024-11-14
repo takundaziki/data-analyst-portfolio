@@ -1,0 +1,96 @@
+<h1>Bicycle Sales Analysis Project</h1>
+
+<p>This project analyzes the sales data of a bicycle company, <strong>Toan Bike</strong>, using SQL and Power BI to uncover trends and insights. The main goal is to understand seasonal trends, customer demographics, and revenue, and make pricing recommendations.</p>
+
+<!-- Insert a snapshot of your final Power BI dashboard here -->
+<img src="URL_to_dashboard_screenshot" alt="Power BI Dashboard - Bicycle Sales Analysis" width="800" />
+
+<p><em>Power BI Dashboard Overview: Displays revenue trends, demographics, and profitability over time.</em></p>
+
+<h2>Project Overview</h2>
+
+<p>The project involved analyzing bicycle sales data and presenting key insights to help the company adjust pricing strategies. The following steps were followed:</p>
+
+<ul>
+  <li><strong>Data Collection:</strong> Sales data was collected from two Excel files representing sales for the years 2021 and 2022.</li>
+  <li><strong>SQL Database Creation:</strong> The data was imported into a SQL Server database for further analysis.</li>
+  <li><strong>Data Analysis:</strong> SQL queries were used to clean, transform, and merge the datasets.</li>
+  <li><strong>Visualization:</strong> Power BI was used to visualize trends such as revenue by season, customer demographics, and hourly revenue trends.</li>
+  <li><strong>Recommendation:</strong> Based on the analysis, we proposed a 5% price increase for 2023.</li>
+</ul>
+
+<h2>Data Sources & SQL Setup</h2>
+
+<p>The data was provided by the company in two Excel files. These files contained sales data for 2021 and 2022.</p>
+
+<p>Here’s how I set up the SQL Server for the project:</p>
+
+<ol>
+  <li>Installed SQL Server and SQL Server Management Studio.</li>
+  <li>Created a new SQL database named <strong>bike_data</strong>.</li>
+  <li>Imported the Excel files as tables into the SQL database using the "Import Flat File" wizard.</li>
+  <li>Cleaned and transformed the data using SQL queries (details below).</li>
+</ol>
+
+<!-- You can show a snapshot of the SQL table or schema -->
+<img src="URL_to_SQL_schema_screenshot" alt="SQL Schema for Bicycle Sales Database" width="600" />
+
+<p><em>Figure: SQL Database schema after importing the bicycle sales data.</em></p>
+
+<h2>SQL Data Transformation</h2>
+
+<p>After importing the data, I cleaned and transformed it to make it usable for analysis. Below is a key SQL query used to merge the 2021 and 2022 data:</p>
+
+<pre>
+-- SQL Query to merge data from 2021 and 2022
+SELECT *
+FROM bike_sales_2021
+UNION ALL
+SELECT *
+FROM bike_sales_2022;
+</pre>
+
+<!-- Show a snapshot of SQL Server or results -->
+<img src="URL_to_SQL_query_results_screenshot" alt="SQL Query Results" width="800" />
+
+<p><em>Figure: Results of the merged dataset for 2021 and 2022 bicycle sales.</em></p>
+
+<h2>Power BI Dashboard</h2>
+
+<p>The next step was to connect Power BI to the SQL Server and visualize the data. Below are key visuals that were created:</p>
+
+<!-- Screenshot 1: Revenue over time -->
+<img src="URL_to_revenue_over_time_screenshot" alt="Power BI Revenue Over Time" width="800" />
+<p><em>Figure: Revenue trends over time, showing peak sales during summer months.</em></p>
+
+<!-- Screenshot 2: Customer demographics -->
+<img src="URL_to_customer_demographics_screenshot" alt="Power BI Customer Demographics" width="800" />
+<p><em>Figure: Customer demographics by rider type (casual vs. subscribed riders).</em></p>
+
+<!-- Screenshot 3: Revenue by season -->
+<img src="URL_to_revenue_by_season_screenshot" alt="Power BI Revenue by Season" width="800" />
+<p><em>Figure: Revenue distribution across seasons, indicating a clear increase in summer.</em></p>
+
+<h2>Key Insights</h2>
+
+<p>Based on the analysis, the following insights were drawn:</p>
+
+<ul>
+  <li><strong>Seasonality:</strong> Bicycle sales were highest during the summer months, suggesting a seasonal pattern.</li>
+  <li><strong>Customer Demographics:</strong> Casual riders accounted for 60% of the sales, with subscribed riders generating higher revenue per user.</li>
+  <li><strong>Revenue Trends:</strong> The average hourly revenue was highest between 8 AM and 10 AM, indicating peak sales during morning hours.</li>
+</ul>
+
+<h2>Recommendations</h2>
+
+<p>Given the insights, I recommended the following to the stakeholders:</p>
+
+<ul>
+  <li>Increase bicycle rental prices by 5% during the summer months to maximize profit.</li>
+  <li>Introduce loyalty programs for casual riders to increase subscriptions and repeat customers.</li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>The analysis provided key insights into the company’s bicycle sales trends, helping the management make informed pricing decisions. By identifying peak seasons and understanding customer demographics, Toan Bike was able to optimize its pricing strategy for the following year, ensuring higher profitability.</p>
+
