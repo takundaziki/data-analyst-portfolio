@@ -2,7 +2,7 @@
 
 This is my porfolio website!
 
-#Header
+# Header
 
 
-##Subheader
+## Subheader
